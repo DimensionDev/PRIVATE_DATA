@@ -10,7 +10,6 @@ key = os.urandom(32)
 iv = os.urandom(16)
 
 cipher = Cipher(algorithms.AES(key), modes.GCM(iv), backend=backend)
-encryptor = cipher.encryptor()
 decryptor = cipher.decryptor()
 
 # key and iv
